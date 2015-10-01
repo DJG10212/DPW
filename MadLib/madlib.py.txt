@@ -17,14 +17,20 @@ adjective_2 = input("An adjective: ")
 rebel_numbers = input("A large number: ")
 stormtrooper_numbers = input("Another large number: ")
 laugh_number = int(input("A small number: "))
+#these will be the jedi names
+enemy1 = input("enter a name: ")
+enemy2 = input("enter another name: ")
+enemy3 = input("enter another name: ")
+#put the jedi names into a list
+jedi = [enemy1,enemy2,enemy3]
 
-
+#calculates who has the larger army, and prints based off the number
 if int(rebel_numbers) < int(stormtrooper_numbers):
-  print("Darth " +name+ " received a new order from his master. He was told to go " +adjective_1+ " destroy everything on planet " +funny_word+ " When Darth " +name+ " arrived on the planet, he realized the notorious Jedi Bob had a rebel army of " +rebel_numbers+small_animal+ "s. You call for reinforcements, and your master sends " +stormtrooper_numbers+ " storm troopers to battle with you. You easily destroy the rebel scum. Back in your ship you look over the destroyed planet, and " +adjective_2+ " laughs. " )
+  print("Darth " +name+ " received a new order from his master. He was told to go " +adjective_1+ " destroy everything on planet " +funny_word+ " When Darth " +name+ " arrived on the planet, he realized the notorious Jedi " +str(jedi)+ " had a rebel army of " +rebel_numbers+small_animal+ "s. You call for reinforcements, and your master sends " +stormtrooper_numbers+ " storm troopers to battle with you. You easily destroy the rebel scum. Back in your ship you look over the destroyed planet, and " +adjective_2+ " laughs. " )
 else:
-  print("Darth " +name+ " received a new order from his master. He was told to go " +adjective_1+ " destroy everything on planet " +funny_word+ " When Darth " +name+ " arrived on the planet, he realized the notorious Jedi Bob had a rebel army of " +rebel_numbers+small_animal+ "s. You call for reinforcements, and your master sends " +stormtrooper_numbers+ " storm troopers to battle with you. You are easily destroyed by rebel scum. Jedi Bob looks over you, and " +adjective_2+ " laughs. ")
+  print("Darth " +name+ " received a new order from his master. He was told to go " +adjective_1+ " destroy everything on planet " +funny_word+ " When Darth " +name+ " arrived on the planet, he realized the notorious Jedi " +str(jedi)+ " had a rebel army of " +rebel_numbers+small_animal+ "s. You call for reinforcements, and your master sends " +stormtrooper_numbers+ " storm troopers to battle with you. You are easily destroyed by rebel scum. Jedi Bob looks over you, and " +adjective_2+ " laughs. ")
 
-
+#prints the number of laughs you entered
 for i in range(0,laugh_number):
   print "Ha"
   laugh = i+1

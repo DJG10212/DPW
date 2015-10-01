@@ -1,0 +1,7 @@
+'''
+Dakota Gillette
+10/01/15
+Design Patterns for Web Programming
+Assignment: Mad Lib
+
+'''

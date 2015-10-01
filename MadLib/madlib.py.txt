@@ -18,7 +18,8 @@ rebel_numbers = input("A large number: ")
 stormtrooper_numbers = input("Another large number: ")
 laugh_number = input("A small number: ")
 
-print("Darth " +name+ " received a new order from his master. He was told to go " +adjective_1+ " destroy everything on planet " +funny_word+ " When Darth " +name+ " arrived on the planet, he realized the notorious Jedi Bob had a rebel army of " +rebel_numbers+small_animal+ "s. You call for reinforcements, and your master sends " +stormtrooper_numbers+ " storm troopers to battle with you. You easily destroy the rebel scum. Back in your ship you look over the destroyed planet, and " +adjective_2+ " laugh. " +laugh )
-
-
+if int(rebel_numbers) < int(stormtrooper_numbers):
+  print("Darth " +name+ " received a new order from his master. He was told to go " +adjective_1+ " destroy everything on planet " +funny_word+ " When Darth " +name+ " arrived on the planet, he realized the notorious Jedi Bob had a rebel army of " +rebel_numbers+small_animal+ "s. You call for reinforcements, and your master sends " +stormtrooper_numbers+ " storm troopers to battle with you. You easily destroy the rebel scum. Back in your ship you look over the destroyed planet, and " +adjective_2+ " laugh. " )
+else:
+  print("Darth " +name+ " received a new order from his master. He was told to go " +adjective_1+ " destroy everything on planet " +funny_word+ " When Darth " +name+ " arrived on the planet, he realized the notorious Jedi Bob had a rebel army of " +rebel_numbers+small_animal+ "s. You call for reinforcements, and your master sends " +stormtrooper_numbers+ " storm troopers to battle with you. You are easily destroyed by rebel scum. Jedi Bob looks over you, and " +adjective_2+ " laughs. ")
 

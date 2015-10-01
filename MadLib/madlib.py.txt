@@ -3,5 +3,9 @@ Dakota Gillette
 10/01/15
 Design Patterns for Web Programming
 Assignment: Mad Lib
-
 '''
+
+print ("Hello, and welcome to Star Wars Mad Libs!")
+
+#ask user for answers to fill in the story
+name = input("What's your first name: ")

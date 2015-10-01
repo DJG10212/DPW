@@ -9,3 +9,9 @@ print ("Hello, and welcome to Star Wars Mad Libs!")
 
 #ask user for answers to fill in the story
 name = input("What's your first name: ")
+adjective_1 = input("An adjective: ")
+verb = input("A verb: ")
+funny_word = input(" A funny word: ")
+small_animal = input(" A small animal: ")
+adjective_2 = input("An adjective: ")
+rebel_numbers = input("A large number: ")

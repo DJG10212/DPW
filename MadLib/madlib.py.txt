@@ -24,6 +24,7 @@ enemy3 = input("enter another name: ")
 
 
 
+
 #put the jedi names into a list
 jedi_list = [enemy1,enemy2,enemy3]
 
@@ -41,10 +42,19 @@ else:
 for i in range(0,laugh_number):
   print "Ha"
   laugh = i+1
+  
+def calcArea(a, b):
+  jedi_left = a * b
+  return jedi_left
+  
+left = calcArea(20, 5);
+print("there are " +int(left)+ " jedi still alive!)
 
-mission = int(input("Do you continue your mission of destroying the jedi, or do you want a break. Type 1 for yes, 2 for no?: "))
+resume = input("Would you like to hunt the rest of the jedi? yes, or no? ")
 
-if mission = int(1):
-  print("you resume your mission destroying all the jedi.")
+if resume == str(yes):
+  print("your master will be pleased!)
 else:
-  print("your master is not pleased, and you must return to him immediately.")
+  print("your master will be dissapointed with you.")
+
+

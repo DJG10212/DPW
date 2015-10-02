@@ -4,7 +4,7 @@ Dakota Gillette
 Design Patterns for Web Programming
 Assignment: Mad Lib
 '''
-
+#welcome message
 print ("Hello, and welcome to Star Wars Mad Libs!")
 
 #ask user for answers to fill in the story
@@ -21,6 +21,8 @@ laugh_number = int(input("A small number: "))
 enemy1 = input("enter a name: ")
 enemy2 = input("enter another name: ")
 enemy3 = input("enter another name: ")
+calc1 = int(input("enter a number: "))
+calc2 = int(input("enter another number: "))
 
 
 
@@ -36,21 +38,21 @@ jedi = {"the_jedi":jedi_list}
 if int(rebel_numbers) < int(stormtrooper_numbers):
   print("Darth " +name+ " received a new order from his master. He was told to go " +adjective_1+ " destroy everything on planet " +funny_word+ " When Darth " +name+ " arrived on the planet, he realized the notorious Jedi " +str(jedi["the_jedi"])+ " had a rebel army of " +rebel_numbers+small_animal+ "s. You call for reinforcements, and your master sends " +stormtrooper_numbers+ " storm troopers to battle with you. You easily destroy the rebel scum. Back in your ship you look over the destroyed planet, and " +adjective_2+ " laughs. " )
 else:
-  print("Darth " +name+ " received a new order from his master. He was told to go " +adjective_1+ " destroy everything on planet " +funny_word+ " When Darth " +name+ " arrived on the planet, he realized the notorious Jedi " +str(jedi["the_jedi"])+ " had a rebel army of " +rebel_numbers+small_animal+ "s. You call for reinforcements, and your master sends " +stormtrooper_numbers+ " storm troopers to battle with you. You are easily destroyed by rebel scum. Jedi Bob looks over you, and " +adjective_2+ " laughs. ")
+  print("Darth " +name+ " received a new order from his master. He was told to go " +adjective_1+ " destroy everything on planet " +funny_word+ " When Darth " +name+ " arrived on the planet, he realized the notorious Jedi " +str(jedi["the_jedi"])+ " had a rebel army of " +rebel_numbers+ " " +small_animal+ "s. You call for reinforcements, and your master sends " +stormtrooper_numbers+ " storm troopers to battle with you. You are easily destroyed by rebel scum. Jedi Bob looks over you, and " +adjective_2+ " laughs. ")
 
 #prints the number of laughs you entered
 for i in range(0,laugh_number):
   print "Ha"
   laugh = i+1
-  
+#calculates the jedi that are still alive
 def calcArea(a, b):
   jedi_left = a * b
   return jedi_left
-left = calcArea(20, 5);
+left = calcArea(calc1, calc2);
 left = str(left)
 print ("there are " +left+ " jedi still alive!")
-
-resume = input("Would you like to hunt the rest of the jedi? 1 for yes, 2 for no? ")
+#gives you the option to resume the jedi hunt
+resume = input("Would you like to hunt the rest of the jedi? 0 for no, 1 for yes. ")
 resume = int(resume)
 if resume > 0:
   print("your master will be pleased!")

@@ -41,3 +41,10 @@ else:
 for i in range(0,laugh_number):
   print "Ha"
   laugh = i+1
+
+mission = int(input("Do you continue your mission of destroying the jedi, or do you want a break. Type 1 for yes, 2 for no?: "))
+
+if mission = int(1):
+  print("you resume your mission destroying all the jedi.")
+else:
+  print("your master is not pleased, and you must return to him immediately.")

@@ -46,14 +46,14 @@ for i in range(0,laugh_number):
 def calcArea(a, b):
   jedi_left = a * b
   return jedi_left
-  
 left = calcArea(20, 5);
-print("there are " +int(left)+ " jedi still alive!)
+left = str(left)
+print ("there are " +left+ " jedi still alive!")
 
-resume = input("Would you like to hunt the rest of the jedi? yes, or no? ")
-
-if resume == str(yes):
-  print("your master will be pleased!)
+resume = input("Would you like to hunt the rest of the jedi? 1 for yes, 2 for no? ")
+resume = int(resume)
+if resume > 0:
+  print("your master will be pleased!")
 else:
   print("your master will be dissapointed with you.")
 

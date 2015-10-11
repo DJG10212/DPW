@@ -1,14 +1,15 @@
 '''
 Dakota Gillette
-10/10/15
+10/8/15
 DWP
-Simple Form
 '''
-import webapp2
 
-class MainHandler(webapp2.RequestHandler):
-    def get(self):
-    page_head ='''<!DOCTYPE HTML>
+import webapp2  # use the webapp2 library
+
+
+class MainHandler(webapp2.RequestHandler):  # declaring a class
+    def get(self): # function that starts everything. Catalyst
+        page_head ='''<!DOCTYPE HTML>
 <html>
     <head>
         <title>Simple Form</title>
@@ -25,7 +26,6 @@ class MainHandler(webapp2.RequestHandler):
     </body>
 </html>'''
 
-
         if self.request.GET:
             user = self.request.GET['user']
             email = self.request.GET['email']
@@ -35,8 +35,7 @@ class MainHandler(webapp2.RequestHandler):
         # code goes here
 
 
-
-
+# never touch this
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)

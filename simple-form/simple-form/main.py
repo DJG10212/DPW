@@ -12,14 +12,21 @@ class MainHandler(webapp2.RequestHandler):  # declaring a class
         page_head ='''<!DOCTYPE HTML>
 <html>
     <head>
-        <title>Simple Form</title>
+        <title>Pizza Order Form</title>
     </head>
     <body>'''
 
         page_body = '''<form method="GET">
             <label>Name: </label><input type="text" name="user" />
-            <label>Email: </label><input type="text" name="email"/>
-            <input type="submit" value="Submit" />'''
+            <label>Phone Number </label><input type="text" name="phone"/>
+            <label>Your Address </label><input type="text" name="address"/>
+            <input type="submit" value="Submit" />
+            <label>Pizza Type: </label><select name="pizzaType">
+            <option value="pepperoni">Pepperoni</option>
+            <option value="cheese">Cheese</option>
+            <option value="hawaiian">Hawaiian</option>
+            <option value="supreme">Supreme</option>
+            </select>'''
 
         page_close = '''
         </form>

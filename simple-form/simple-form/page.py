@@ -14,8 +14,8 @@ class Page(): #page class
             <head>
                 <title>Pizza Order Form</title>
             </head>
-            <body>'''
-
+            <body> '''
+            # starting the HTML body
         self.body = '''<form method="GET">
                     <label>Name: </label><input type="text" name="user" />
                     <br><br>
@@ -41,4 +41,11 @@ class Page(): #page class
                 </form>
             </body>
         </html>'''
-        
+
+        def print_info(self, x=''): #prints info
+            if x=='':
+                all = self.head + self.body + self.close # grabs these elements from the HTML
+                all = all.format(**locals()) # css is now enabled
+                return all # returns the variable, all
+            else
+                return self.head + x + self.close

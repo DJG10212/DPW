@@ -1,0 +1,27 @@
+body {
+    background-color:#F0EED3;
+    width: 760px;
+    margin: 0 auto;
+}
+
+form {
+    width: 460px;
+    background: #FFFFFF;
+    padding-top: 25px;
+	padding-left:200px;
+	padding-bottom: 25px;
+}
+
+
+h1 {
+	color:rgba(197,0,3,1.00);
+}
+
+
+message {
+    width: 460px;
+    background: #FFFFFF;
+    padding-top: 25px;
+	padding-left:200px;
+	padding-bottom: 25px;
+}

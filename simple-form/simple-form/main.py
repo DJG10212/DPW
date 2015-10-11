@@ -5,24 +5,20 @@ DWP
 Simple Form
 '''
 
-import webapp2  # use the webapp2 library
-from page import Page # imports the page class from page.py
+import webapp2 # use the webapp2 library
+from page import * # imports page.py class
 
+class MainHandler(webapp2.RequestHandler):
+    def get(self):
+		page = Page() # Creates an instance of the imported class page
 
-class MainHandler(webapp2.RequestHandler):  # declaring a class
-    def get(self): # function that starts everything. Catalyst
+		#if there is a URL variable then print this
+		if self.request.GET:
+			message ="Thank you for your order " + " " + self.request.GET["user"] + " Here is your receipt: <br>" + self.request.GET["phone"] +"<br> " + self.request.GET["address"] + " <br>" + self.request.GET["pizzaType"] + "<br> " + self.request.GET["orderType"] + "<br> " + self.request.GET["request"] + ". Thank you for your order."
+			self.response.write(page.header + message + page.closer)
 
-
-        if self.request.GET: #this brings the variables to the page
-            page = Page(self)
-            
-            user = self.request.GET['user']
-            email = self.request.GET['email']
-            self.response.write(page_head + user + ' ' + email + page_body + page_close)
-        else:
-            self.response.write(page_head + page_body + page_close) #PRINT
-        # code goes here
-
+		else:
+			self.response.write(page.header + page.registration + page.closer)
 
 # never touch this
 app = webapp2.WSGIApplication([

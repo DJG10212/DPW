@@ -5,19 +5,23 @@ DWP
 Simple Form
 '''
 
+class Page():
+    def __init__(self): # set instances for class
+		self.header ='''<!DOCTYPE HTML> <!--initializing the HTML -->
+<html>
+    <head>
+        <title>Pizza Order Form</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
+    </head>
+    <body>
+    <header>
+		<h1>Please fill out the form to order your pizza</h1>
+	</header>
+       '''
 
-class Page(): #page class
-    def __init__(self, page_main): # set instances for class
-        self.css = "css/style.css" # grabbing the stylesheet for the page
-        self.head = '''<!DOCTYPE HTML>  <!-- initializing the HTML -->
-        <html>
-            <head>
-                <title>Pizza Order Form</title>
-            </head>
-            <body> '''
-            # starting the HTML body
-        self.body = '''<form method="GET">
-                    <label>Name: </label><input type="text" name="user" />
+		self.registration = form = '''
+        <form method="GET" action="">
+        	<label>Name: </label><input type="text" name="user" />
                     <br><br>
                     <label>Phone Number </label><input type="text" name="phone"/>
                     <br><br>
@@ -35,17 +39,9 @@ class Page(): #page class
                     <br><br>
                     <textarea name="request" rows="10" cols="30">Leave any special requests in this field</textarea>
                     <br><br>
-                    <input type="submit" value="Submit" />'''
+                    <input type="submit" value="Submit" />
+        </form>'''
 
-        self.close = '''
-                </form>
-            </body>
-        </html>'''
-
-        def print_info(self, x=''): #prints info
-            if x=='':
-                all = self.head + self.body + self.close # grabs these elements from the HTML
-                all = all.format(**locals()) # css is now enabled
-                return all # returns the variable, all
-            else
-                return self.head + x + self.close
+		self.closer = '''
+    </body>
+</html>'''

@@ -8,7 +8,7 @@ class FavoriteMovies(objecxt):
 
     def addMovie(self, m):
         self.__movie_list.append(m)
-
+        print m
 
 
 

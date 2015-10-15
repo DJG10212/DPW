@@ -14,7 +14,7 @@ class MainHandler(webapp2.RequestHandler):
         md1.title = "The Princess Bride"
         md1.year = 1989 # actually calling a function
         md1.director = "Rob Reiner"
-
+        lib.addMovie(md1)
 
         md2 = MovieData()
         md2.title = "Dune"

@@ -15,3 +15,30 @@ class Paycheck(object):
     @twice.setter
     def twice(self, y):
         self.__twice = y
+
+    # wage getter/setter
+    @property
+    def wage(self):
+        return self.__wage
+
+    @wage.setter
+    def wage(self, w):
+        self.__wage = w
+
+    # holiday getter/setter
+    @property
+    def holiday(self):
+        return self.__holiday
+
+    @holiday.setter
+    def holiday(self, h):
+        self.__holiday = h
+
+    # hour getter/setter
+    @property
+    def hours(self):
+        return self.__hours
+
+    @hours.setter
+    def hours(self, h):
+        self.__hours = h

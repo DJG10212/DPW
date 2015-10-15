@@ -2,12 +2,21 @@
 
 import webapp2
 from pages import Page, ResultsPage
+from library import Paycheck, Calculate
 
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        #sets up the use of Calculate
+        # sets up the use of Calculate
         cal = Calculate()
+        # sets up paycheck function
+        pc1 = Paycheck()
+        # sets up some values for paycheck
+        pc1.wage = 10
+        pc1.hours = 40
+        pc1.holiday = 1
+        pc1.twice = False
+
     # if a GET request is sent then get the right values and show results page
     if self.request.GET:
         pc1.wage = self.request.GET['wage']

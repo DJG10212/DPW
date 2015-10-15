@@ -50,5 +50,5 @@ class Calculate(object):
         self.__info = []
 
         # getting the total
-    def total_up(selfself, c):
+    def total_up(self, c):
         self.__info.append(c)

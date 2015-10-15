@@ -6,6 +6,8 @@ from pages import Page, ResultsPage
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        #sets up the use of Calculate
+        cal = Calculate()
     # if a GET request is sent then get the right values and show results page
     if self.request.GET:
         pc1.wage = self.request.GET['wage']

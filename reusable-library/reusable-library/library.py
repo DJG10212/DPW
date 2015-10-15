@@ -42,3 +42,13 @@ class Paycheck(object):
     @hours.setter
     def hours(self, h):
         self.__hours = h
+
+
+class Calculate(object):
+    def __init__(self):
+        print "calc starting"
+        self.__info = []
+
+        # getting the total
+    def total_up(selfself, c):
+        self.__info.append(c)

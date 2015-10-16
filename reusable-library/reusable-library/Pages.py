@@ -48,7 +48,7 @@ class FormPage(object):
         return all
 
 
-class ResultsPage(object):
+class ResultsPage(object): # this will be the second page, the results page
     def __init__(self):
         self.__title = "Results"
         self.css = "css/styles.css"

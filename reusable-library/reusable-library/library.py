@@ -4,7 +4,7 @@ Dakota Gillette
 """
 
 
-class Paycheck(object):
+class Paycheck(object):  # using this to store our info
     def __init__(self):
         # setting some default values
         self.__twice = False
@@ -26,7 +26,6 @@ class Paycheck(object):
     @property
     def wage(self):
         return self.__wage
-
 
     @wage.setter
     def wage(self, w):
@@ -51,7 +50,7 @@ class Paycheck(object):
         self.__hours = h
 
 
-class Calculate(object):
+class Calculate(object):  # this class calculates the pay
     def __init__(self):
         self.__info = []
 
@@ -75,7 +74,7 @@ class Calculate(object):
             print total
             print Paycheck.wage
             # returns the info
-            return "<h1>Paycheck: $" + str(total) +"</h1><br>"
+            return "<h1>Paycheck: $" + str(total) +"</h1> <br>"
 
 
 

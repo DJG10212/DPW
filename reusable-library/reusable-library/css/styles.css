@@ -35,6 +35,11 @@ input[type=number] {
 	margin-bottom:20px;
 }
 
+input:focus { 
+    outline: none !important;
+    border-color: #15beb7;
+}
+
 h1, h3 {
 	text-transform: uppercase;
 	color:rgba(0,0,0,1.00);
@@ -62,6 +67,7 @@ input[type=submit] {
 	width:375px;
 	height:100px;
 	margin: 30px auto;
+	cursor: hand;
 }
 
 input[type=submit]:hover {
@@ -72,5 +78,14 @@ input[type=submit]:hover {
     -moz-transition: .4s;
     -webkit-transition: .4s;
     transition: .4s;
+	cursor: hand;
 }
+
+
+
+
+
+
+
+
 

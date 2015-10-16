@@ -75,7 +75,7 @@ class Calculate(object):
             print total
             print Paycheck.wage
             # returns the info
-            return "<h3>Paycheck: $" + str(total) +"</h3>"
+            return "<h1>Paycheck: $" + str(total) +"</h1><br>"
 
 
 

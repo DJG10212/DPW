@@ -1,13 +1,21 @@
 @charset "utf-8";
 /* CSS Document */
 
-body {
-		padding: 20px; 
+body { 
 		text-align: center;
 		font-family: 'Lato', sans-serif;
-		margin-top:200px;
+		background-color:#15beb7;
+		margin-top:50px;
 	}
 	
+.content {
+	margin: 0 auto;
+	background-color:rgba(255,255,255,1.00);
+	padding-top:100px;
+	padding-bottom:100px;
+	width:75%;
+}
+
 form {
 	font-family:'Open Sans',sans-serif;
 	font-size:11px;

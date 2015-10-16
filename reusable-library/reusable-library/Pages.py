@@ -21,7 +21,7 @@ class FormPage(object):
         """
         # begin body content
         self.body = """
-        <div id="center">
+        <div class="content">
         <h1>Calculate your paycheck</h1>
         <form method"GET" action="" name="form" onsubmit="return validateForm();">
             <input id="hours" type="number" placeholder="Hours Worked:" name="hours" required/><br>
@@ -61,12 +61,14 @@ class ResultsPage(object):
     </head>
 
     <body>
+        <div class="content">
         """
         # body content
         self.body = "<h3>You're going to be rich! Keep saving!</h3><br>"
         self.__error = ''
         self.__close = """
                 <p id="info">Thank you for calculating your wages! Now go make some more money!</p>
+        </div>
         <script src="/js/main.js"></script>
     </body>
 </html>

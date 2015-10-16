@@ -1,3 +1,9 @@
+"""
+Dakota Gillette
+10/15/15
+"""
+
+
 class Paycheck(object):
     def __init__(self):
         # setting some default values
@@ -47,7 +53,6 @@ class Paycheck(object):
 
 class Calculate(object):
     def __init__(self):
-        print "calc starting"
         self.__info = []
 
         # getting the total
@@ -59,7 +64,6 @@ class Calculate(object):
         print c.twice
         # if they get paid twice a month, divide by 2
         if c.twice == "True":
-            print "Pay check twice a month"
             total = total / 2
         else:
             print "Pay check once a month"

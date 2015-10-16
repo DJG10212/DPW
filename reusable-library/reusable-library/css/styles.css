@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+		padding: 20px; 
+		text-align: center;
+		font-family: 'Lato', sans-serif;
+		margin-top:200px;
+	}
+	
+form {
+	font-family:'Open Sans',sans-serif;
+	font-size:11px;
+	font-weight:400;
+	font-style:italic;
+	color:#cecece;
+	border-radius:5px;
+	line-height:1.42857143;
+}
+
+input[type=number] {
+	width:56%;
+	height:34px;
+	padding:6px 12px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	margin-bottom:20px;
+}
+
+h1, h3 {
+	text-transform: uppercase;
+	color:rgba(0,0,0,1.00);
+}
+
+h1:after {
+	background-color:#000000;
+	content:'';
+	display:block;
+	height:2px;
+	width:72px;
+	margin:10px auto;
+}
+
+
+input[type=submit] {
+	align-content:center;
+	color: #15beb7;
+	font-weight:500;
+	text-transform:uppercase;
+	background-color:transparent;
+	border:1px solid #15beb7;
+	display:block;
+	border-radius:2px;
+	width:375px;
+	height:100px;
+	margin: 30px auto;
+}
+
+input[type=submit]:hover {
+	color:#ffffff;
+	background-color:#15beb7;
+    -o-transition: .4s;
+    -ms-transition: .4s;
+    -moz-transition: .4s;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+

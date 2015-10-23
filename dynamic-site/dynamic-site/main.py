@@ -15,6 +15,7 @@ class MainHandler(webapp2.RequestHandler):
             response_page = MoviePage()  # creates a MoviePage instance
             top_movie = Data()
             top_movie.movie_name = self.request.get("movie")
+            response_page.movie = top_movie.movie
         self.response.write(response_page.main_view())  # sends view to user
 
 app = webapp2.WSGIApplication([

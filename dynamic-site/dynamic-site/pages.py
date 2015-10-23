@@ -20,10 +20,13 @@ class MoviePage(Page):
     def __init__(self):
         self._movie = None  # movie objects
 
+    def main_view(self):
+        return open("Pages/content.html").read().format(**locals())  # reads page and returns
+
     #  getter
     @property
     def movie(self):
-        return movie
+        return self._movie
 
     #  setter
     @movie.setter

@@ -28,6 +28,13 @@ class MainHandler(webapp2.RequestHandler):
             top_movie.main_cast = "Robert Downey Jr., Chris Evans, Scarlett Johansson, Chris Hemsworth, Mark Ruffalo"
             top_movie.image_name = "theAvengers.jpg"
             response_page.movie = top_movie
+        elif self.request.get("movie") == "Ultron":
+            response_page.title = "Age of Ultron"
+            top_movie.director = "Joss Whedon"
+            top_movie.description = "When Tony Stark (Robert Downey Jr.) jump-starts a dormant peacekeeping program, things go terribly awry, forcing him, Thor (Chris Hemsworth), the Incredible Hulk (Mark Ruffalo) and the rest of the Avengers to reassemble. As the fate of Earth hangs in the balance, the team is put to the ultimate test as they battle Ultron, a technological terror hell-bent on human extinction. Along the way, they encounter two mysterious and powerful newcomers, Pietro and Wanda Maximoff."
+            top_movie.main_cast = "Robert Downey Jr., Chris Evans, Scarlett Johansson, Chris Hemsworth, Mark Ruffalo"
+            top_movie.image_name = "ultron.jpg"
+            response_page.movie = top_movie
         self.response.write(response_page.main_view())  # sends view to user
 
 app = webapp2.WSGIApplication([

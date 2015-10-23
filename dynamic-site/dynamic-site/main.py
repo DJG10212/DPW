@@ -35,6 +35,13 @@ class MainHandler(webapp2.RequestHandler):
             top_movie.main_cast = "Robert Downey Jr., Chris Evans, Scarlett Johansson, Chris Hemsworth, Mark Ruffalo"
             top_movie.image_name = "ultron.jpg"
             response_page.movie = top_movie
+        elif self.request.get("movie") == "Ironman-3":
+            response_page.title = "Ironman 3"
+            top_movie.director = "Shane Black"
+            top_movie.description = "Plagued with worry and insomnia since saving New York from destruction, Tony Stark (Robert Downey Jr.), now, is more dependent on the suits that give him his Iron Man persona -- so much so that every aspect of his life is affected, including his relationship with Pepper (Gwyneth Paltrow). After a malevolent enemy known as the Mandarin (Ben Kingsley) reduces his personal world to rubble, Tony must rely solely on instinct and ingenuity to avenge his losses and protect the people he loves."
+            top_movie.main_cast = "Robert Downey Jr., Gwyneth Paltrow"
+            top_movie.image_name = "ironman.jpg"
+            response_page.movie = top_movie
         self.response.write(response_page.main_view())  # sends view to user
 
 app = webapp2.WSGIApplication([

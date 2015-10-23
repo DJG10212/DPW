@@ -10,10 +10,9 @@ class Page(object):
     def title(self):
         return self._title
 
-
     # setter
     @title.setter
-    def title(selfself, new_title):
+    def title(self, new_title):
         self._title = new_title
 
 
@@ -21,7 +20,7 @@ class MoviePage(Page):
     def __init__(self):
         self._movie = None  # movie objects
 
-    def render_view(self):
+    def main_view(self):
         return open("Pages/Content.html").read().format(**locals())
 
     # getter

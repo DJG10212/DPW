@@ -3,7 +3,7 @@ class Page(object):
         self._title = None  # page title
 
     def main_view(self):
-        return open("Pages/Credit.html").read()  # reads page and returns
+        return open("Pages/Credit.html").read().format(**locals())  # reads page and returns
 
     # getter
     @property
@@ -23,7 +23,12 @@ class MoviePage(Page):
     def main_view(self):
         return open("Pages/Content.html").read().format(**locals())
 
-    # getter
+    #  getter
     @property
+    def movie(self):
+        return movie
+
+    #  setter
+    @movie.setter
     def movie(self, new_movie):
         self._movie = new_movie

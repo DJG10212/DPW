@@ -1,6 +1,6 @@
 class Data(object):
     def __init__(self):
-        self.title = None  # movie title
+        self._title = None  # movie title
         self._time = None  # when the movie was in theaters
 
 

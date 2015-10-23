@@ -11,7 +11,7 @@ class MainHandler(webapp2.RequestHandler):
             response_page = Page()
             response_page.title = "Top Movies"
         else:
-            # user has submitted get, so we show the right info
+            # user hasn't requested info
             response_page = MoviePage()  # creates a MoviePage instance
             top_movie = Movie()
             if self.request.get("movie") == "Jurassic-World":

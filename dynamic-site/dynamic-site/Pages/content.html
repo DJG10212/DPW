@@ -7,15 +7,16 @@
 
 <body>
 	<div class="navigation">
-        <a href="?movie=Jurassic-World"><button>Jurassic World</button></a>
-        <a href="?movie=The-Avengers"><button>The Avengers</button></a>
-        <a href="?movie=Ultron"><button>Avengers: Age of Ultron</button></a>
-        <a href="?movie=Ironman-3"><button>Ironman 3</button></a>
-        <a href="?movie=Dark-Knight-Rises"><button>Dark Knight Rises</button></a>
+        <a href="?movie=Jurassic World"><button>Jurassic World</button></a>
+        <a href="?movie=The Avengers"><button>The Avengers</button></a>
+        <a href="?movie=Age of Ultron"><button>Avengers: Age of Ultron</button></a>
+        <a href="?movie=Ironman 3"><button>Ironman 3</button></a>
+        <a href="?movie=The Dark Knight Rises"><button>Dark Knight Rises</button></a>
     </div>
         <h1>{self.movie._title}</h1>
-        <h2>{self.movie._director}</h2>
-        <h4>{self.movie._main_cast}</h4>
+        <h2>Directed By: {self.movie._director}</h2>
+        <h3>Box Office Opening: {self.movie._box_office}</h3>
+        <h3>Top Cast: {self.movie._main_cast}</h3>
         <p>{self.movie._description}</p>
         <img src="img/{self.movie._image_name}" alt="{self.movie._image_name}">
 </body>

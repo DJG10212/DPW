@@ -4,7 +4,7 @@ from data import *  # grabs classes from data.py
 from pages import *  # grabs all classes from the pages.py page
 
 
-class MainconsHandler(webapp2.RequestHandler):
+class MainHandler(webapp2.RequestHandler):
     def get(self):
         if self.request.GET:
             # user has submitted get, so we show the right info
@@ -28,7 +28,7 @@ class MainconsHandler(webapp2.RequestHandler):
             top_movie.main_cast = "Robert Downey Jr., Chris Evans, Scarlett Johansson, Chris Hemsworth, Mark Ruffalo"
             top_movie.image_name = "theAvengers.jpg"
             response_page.movie = top_movie
-        self.response.write(landing_page.main_view())  # sends view to user
+        self.response.write(response_page.main_view())  # sends view to user
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)

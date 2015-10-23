@@ -7,6 +7,6 @@ class Data(object):
 class Movie(Data):
     def __init__(self):
         self._director = None  # director of the movies name
-        self.description = None  # movies description
+        self._description = None  # movies description
         self._main_cast = None  # movies leading cast
         self._image_path = None  # image location

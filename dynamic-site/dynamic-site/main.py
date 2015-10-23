@@ -42,6 +42,13 @@ class MainHandler(webapp2.RequestHandler):
             top_movie.main_cast = "Robert Downey Jr., Gwyneth Paltrow"
             top_movie.image_name = "ironman.jpg"
             response_page.movie = top_movie
+        elif self.request.get("movie") == "Dark-Knight-Rises":
+            response_page.title = "Dark Knight Rises"
+            top_movie.director = "Christopher Nolan"
+            top_movie.description = "It has been eight years since Batman (Christian Bale), in collusion with Commissioner Gordon (Gary Oldman), vanished into the night. Assuming responsibility for the death of Harvey Dent, Batman sacrificed everything for what he and Gordon hoped would be the greater good. However, the arrival of a cunning cat burglar (Anne Hathaway) and a merciless terrorist named Bane (Tom Hardy) force Batman out of exile and into a battle he may not be able to win."
+            top_movie.main_cast = "Christian Bale, Tom Hardy, Anne Hathaway"
+            top_movie.image_name = "batman.jpg"
+            response_page.movie = top_movie
         self.response.write(response_page.main_view())  # sends view to user
 
 app = webapp2.WSGIApplication([

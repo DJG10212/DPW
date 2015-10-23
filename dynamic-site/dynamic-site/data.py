@@ -1,20 +1,21 @@
 class Data(object):
     def __init__(self):
         self._title = None  # movie title
+        self._movie_name = None
         self._movie = Movie()
 
     # getter
     @property
-    def title(self):
-        return self._title
+    def movie_name(self):
+        return self._movie_name
 
     @property
     def movie(self):
         return self._movie
 
     # setter
-    @title.setter
-    def title(self, new_title):
+    @movie_name.setter
+    def movie_name(self, new_movie_name):
         if self._title == "Jurassic-World":
             self._movie.title = "Jurassic World"
             self._movie.director = "Colin Trevorrow"
@@ -45,7 +46,7 @@ class Data(object):
             self._movie.description = "It has been eight years since Batman (Christian Bale), in collusion with Commissioner Gordon (Gary Oldman), vanished into the night. Assuming responsibility for the death of Harvey Dent, Batman sacrificed everything for what he and Gordon hoped would be the greater good. However, the arrival of a cunning cat burglar (Anne Hathaway) and a merciless terrorist named Bane (Tom Hardy) force Batman out of exile and into a battle he may not be able to win."
             self._movie.main_cast = "Christian Bale, Tom Hardy, Anne Hathaway"
             self._movie.image_name = "batman.jpg"
-        self._title = new_title
+        self._movie_name = new_movie_name
 
 
 class Movie(Data):

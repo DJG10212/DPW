@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>{self._title} | Dynamic Site</title>
+<title>{self.movie} | Dynamic Site</title>
 </head>
 
 <body>
@@ -12,8 +12,8 @@
         <a href="?nav=Ultron"><button>Avengers: Age of Ultron</button></a>
         <a href="?nav=Ironman-3"><button>Ironman 3</button></a>
         <a href="?nav=Dark-Knight-Rises"><button>Dark Knight Rises</button></a>
-        <img src="img/{self._movie.image_name}" alt="{self._movie.image.name}">
-        <p>{self._movie.description}</p>
+        <img src="img/{self.movie.image_name}" alt="{self.movie.image.name}">
+        <p>{self.movie.description}</p>
     </div>
 </body>
 </html>

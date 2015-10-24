@@ -20,11 +20,17 @@
         </nav>
     </header>
     </div>
-        <h1>{self.movie._title}</h1>
-        <h2>Directed By: {self.movie._director}</h2>
-        <h3>Box Office Opening: {self.movie._box_office}</h3>
-        <h3>Top Cast: {self.movie._main_cast}</h3>
-        <p>{self.movie._description}</p>
+    	<section class="movies">
+        <div class="moviePage">
         <img src="img/{self.movie._image_name}" alt="{self.movie._image_name}">
+        </div>
+        <div class="moviePage">
+        <h1>{self.movie._title}</h1>
+        <h3>Directed By: {self.movie._director}</h3>
+        <h4>Box Office Opening: {self.movie._box_office}</h4>
+        <h4>Top Cast: {self.movie._main_cast}</h4>
+        <p>{self.movie._description}</p>
+        </div>
+        </section>
 </body>
 </html>

@@ -72,7 +72,7 @@ ul {
 /*index*/
 
 section {
-	margin-top:100px;
+	margin-top:80px;
 	text-align:center;
 }
 
@@ -80,10 +80,22 @@ article {
 	width: calc(100% / 2);
 	text-align:center;
 	float:left;
-	margin-top:100px;
+	margin-top:60px;
 }
 
 a {
 	text-decoration:none;
 	color:#000000;	
+}
+
+.movies {
+	margin: 0 auto;
+	margin-left:15%;
+}
+
+.moviePage {
+	width: calc(82% / 2);
+	text-align:left;
+	float:left;
+	margin-top:60px;
 }

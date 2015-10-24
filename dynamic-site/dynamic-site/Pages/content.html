@@ -3,15 +3,22 @@
 <head>
 <meta charset="utf-8">
 <title>{self._movie._title} | Dynamic Site</title>
+<link rel="stylesheet" type="text/css" href="../css/main.css" />
 </head>
 
 <body>
-	<div class="navigation">
-        <a href="?movie=Jurassic World"><button>Jurassic World</button></a>
-        <a href="?movie=The Avengers"><button>The Avengers</button></a>
-        <a href="?movie=Age of Ultron"><button>Avengers: Age of Ultron</button></a>
-        <a href="?movie=Ironman 3"><button>Ironman 3</button></a>
-        <a href="?movie=The Dark Knight Rises"><button>Dark Knight Rises</button></a>
+	<header>
+    		<img src="../img/logo.png" class="logo" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="?movie=Jurassic World">Jurassic World</a></li>
+                <li class="border"><a href="?movie=The Avengers">Avengers</a></li>
+                <li class="border"><a href="?movie=Age of Ultron">Age of Ultron</a></li>
+                <li class="border"><a href="?movie=Ironman 3">Ironman 3</a></li>
+                <li class="border"><a href="?movie=The Dark Knight Rises">Dark Knight Rises</a></li>
+            </ul>
+        </nav>
+    </header>
     </div>
         <h1>{self.movie._title}</h1>
         <h2>Directed By: {self.movie._director}</h2>

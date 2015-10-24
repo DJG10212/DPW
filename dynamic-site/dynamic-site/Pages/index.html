@@ -3,19 +3,42 @@
 <head>
 <meta charset="utf-8">
 <title> {self._title} | Dynamic Site</title>
+<link rel="stylesheet" type="text/css" href="../css/main.css" />
 </head>
 
 <body>
-	<div class="navigation">
-        <a href="?movie=Jurassic World"><button>Jurassic World</button></a>
-        <a href="?movie=The Avengers"><button>The Avengers</button></a>
-        <a href="?movie=Age of Ultron"><button>Avengers: Age of Ultron</button></a>
-        <a href="?movie=Ironman 3"><button>Ironman 3</button></a>
-        <a href="?movie=The Dark Knight Rises"><button>Dark Knight Rises</button></a>
+	<header>
+    		<img src="../img/logo.png" class="logo" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="?movie=Jurassic World">Jurassic World</a></li>
+                <li class="border"><a href="?movie=The Avengers">Avengers</a></li>
+                <li class="border"><a href="?movie=Age of Ultron">Age of Ultron</a></li>
+                <li class="border"><a href="?movie=Ironman 3">Ironman 3</a></li>
+                <li class="border"><a href="?movie=The Dark Knight Rises">Dark Knight Rises</a></li>
+            </ul>
+        </nav>
+    </header>
     </div>
-    <div class="container">
-    	<h2>Welcome to Top Box Office Movies!</h2>
-        <p>This site has been specially made to display the top Box Office movies! Click on the buttons to view the greatest grossing movies off al time!</p>
-    </div>
+    <section>
+    	<h1>Welcome to Top Box Office Movies!</h1>
+        <p>This site has been specially made to display the top Box Office movies! Click on the links to view the greatest grossing movies off al time! Below are the top 4 movies of all time!</p>
+        <article>
+        <a href="?movie=Jurassic World"><img src="../img/jurassicWorld.jpg" alt="Jurassic World"></a>
+        <h3><a href="?movie=Jurassic World">Jurassic World</a></h3>
+       	</article>
+        <article>
+        <a href="?movie=The Avengers"><img src="../img/theAvengers.jpg" alt="The Avengers"></a>
+        <h3><a href="?movie=The Avengers">The Avengers</a></h3>
+       	</article>
+        <article>
+        <a href="?movie=Age of Ultron"><img src="../img/ultron.jpg" alt="Age Of Ultron"></a>
+        <h3><a href="?movie=Age of Ultron">Age of Ultron</a></h3>
+       	</article>
+        <article>
+        <a href="?movie=Ironman 3"><img src="../img/ironman.jpg" alt="Ironman 3"></a>
+        <h3><a href="?movie=Ironman 3">Ironman 3</a></h3>
+       	</article>
+    </section>
 </body>
 </html>

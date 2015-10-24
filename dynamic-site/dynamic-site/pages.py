@@ -1,3 +1,11 @@
+"""
+Dakota Gillette
+10/23/15
+Design Patterns for Web Programming - Online
+Full Sail University
+"""
+
+
 class Page(object):
     def __init__(self):
         self._title = None  # page title
@@ -16,7 +24,7 @@ class Page(object):
         self._title = new_title
 
 
-class MoviePage(Page):
+class ContentPage(Page):
     def __init__(self):
         self._movie = None  # movie objects
 

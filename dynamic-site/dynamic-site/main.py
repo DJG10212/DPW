@@ -1,4 +1,9 @@
-
+"""
+Dakota Gillette
+10/23/15
+Design Patterns for Web Programming - Online
+Full Sail University
+"""
 import webapp2
 from data import *  # grabs classes from data.py
 from pages import *  # grabs all classes from the pages.py page
@@ -12,7 +17,7 @@ class MainHandler(webapp2.RequestHandler):
             response_page.title = "Top Movies"
         else:
             # user has requested info. Show user requested movie page
-            response_page = MoviePage()  # creates a MoviePage instance
+            response_page = ContentPage()  # creates a MoviePage instance
             top_movie = Data()
             top_movie.movie_name = self.request.get("movie")
             response_page.movie = top_movie.movie

@@ -1,3 +1,11 @@
+"""
+Dakota Gillette
+10/23/15
+Design Patterns for Web Programming - Online
+Full Sail University
+"""
+
+
 class Data(object):
     def __init__(self):
         self._title = None  # movie title
